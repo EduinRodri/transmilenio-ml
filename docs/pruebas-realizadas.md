@@ -1,7 +1,7 @@
 # Pruebas realizadas
 
 - **Fecha de ejecución:** 6 de octubre de 2026
-- **Entorno:** Windows 11 Pro · Python 3.13.15 · pandas 3.0.6 · scikit-learn 1.9.1 · scipy 1.18.1 ·
+- **Entorno:** Windows 11 Pro · Python 3.13.15 · pandas 3.0.6 · scikit-learn 1.8.0 · scipy 1.18.1 ·
   matplotlib 3.11.2 · pytest 9.1.1
 - **Comando:** `uv run pytest -v`
 - **Resultado:** **33 de 33 pruebas aprobadas** (69 s)
@@ -87,7 +87,7 @@ resultados.
 
 | Problema | Causa | Solución |
 |---|---|---|
-| scikit-learn 1.9.1 no cargaba en Windows | El Control inteligente de aplicaciones de Windows 11 bloqueó un archivo DLL de la librería | Se probó con scikit-learn 1.8.0 (mismos resultados); luego se desactivó esa protección en el equipo y se usa la 1.9.1 |
+| scikit-learn 1.9.1 no cargaba en Windows | El Control inteligente de aplicaciones de Windows 11 bloqueó un archivo DLL de la librería | Se fijó scikit-learn 1.8, que funciona con la protección activa y da resultados idénticos |
 | El primer agrupamiento formaba un grupo con una sola "estación" | El *Bicicletero Mirador del Paraíso* tiene 2 salidas en el mes y su perfil es ruido | Se descartan los puntos con menos de 100 salidas en un día hábil |
 | Los portales Norte, 80 y Usme no se marcaban como portal | En el archivo se llaman "Cabecera" | `es_portal` reconoce "Portal" y "Cabecera" (prueba 12) |
 | Primera versión del árbol con 68 % de exactitud | Sin el tamaño de la estación, el árbol no distinguía estaciones grandes y pequeñas de la misma zona | Se agregó `salidas_diarias_estacion`, calculado solo con los días de entrenamiento |

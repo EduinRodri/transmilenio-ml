@@ -1,5 +1,3 @@
-"""Pruebas de la carga y limpieza de datos (datos_transmilenio.py)."""
-
 import pytest
 
 from datos_transmilenio import (
@@ -50,7 +48,6 @@ def test_tipo_de_dia(dia, esperado):
 
 
 def test_el_formato_largo_no_pierde_salidas():
-    """Pasar de ancho a largo no puede crear ni perder pasajeros."""
     crudo = cargar_crudo()
     columnas_dia = [c for c in crudo.columns if c.startswith("DÍA")]
     total_crudo = crudo[columnas_dia].fillna(0).round().sum().sum()
@@ -80,7 +77,6 @@ def test_los_portales_se_marcan_incluidas_las_cabeceras(datos):
 
 
 def test_un_dia_habil_mueve_mas_gente_que_un_domingo(datos):
-    """Prueba de cordura con un hecho conocido del sistema."""
     por_dia = datos.groupby(["dia", "tipo_dia"])["salidas"].sum().reset_index()
     promedio = por_dia.groupby("tipo_dia")["salidas"].mean()
     assert promedio["habil"] > promedio["sabado"] > promedio["domingo_festivo"]

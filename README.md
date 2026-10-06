@@ -29,9 +29,8 @@ uv run pytest -v                               # 33 pruebas
 
 Cada script imprime sus resultados en consola y guarda las figuras en `resultados/`.
 
-> **Si aparece `DLL load failed ... Control de aplicaciones`:** es el Control inteligente de
-> aplicaciones de Windows 11 bloqueando scikit-learn 1.9. Con la versión 1.8 los resultados son
-> idénticos: `uv run --with scikit-learn==1.8.0 python -m supervisado.arbol_decision`.
+> El proyecto usa scikit-learn 1.8: en Windows 11, con el Control inteligente de aplicaciones
+> activo, la 1.9 no carga (`DLL load failed`).
 
 ## Estructura
 
