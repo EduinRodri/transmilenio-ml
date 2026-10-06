@@ -29,9 +29,6 @@ uv run pytest -v                               # 33 pruebas
 
 Cada script imprime sus resultados en consola y guarda las figuras en `resultados/`.
 
-> El proyecto usa scikit-learn 1.8: en Windows 11, con el Control inteligente de aplicaciones
-> activo, la 1.9 no carga (`DLL load failed`).
-
 ## Estructura
 
 ```
