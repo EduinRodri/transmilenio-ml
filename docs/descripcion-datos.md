@@ -15,6 +15,19 @@
 tiene vacaciones escolares largas ni temporada navideña, e incluye un festivo (lunes 14), que
 sirve para comprobar que el modelo distingue los días de poca demanda.
 
+**Otras fuentes que se revisaron.** Antes de elegir esta se buscaron otros datos de TransMilenio
+en Datos Abiertos Bogotá:
+
+| Fuente | Por qué no se usó como base |
+|---|---|
+| El mismo consolidado de salidas, enero a abril de 2020 | Incluye la cuarentena por COVID-19 desde finales de marzo de 2020, así que los patrones de viaje no son normales |
+| Biciestaciones del sistema TransMilenio (TransMiBici) | Mide el uso de bicicletas en estaciones, no de pasajeros del sistema troncal |
+| BibloEstación | Son puntos de lectura en estaciones y portales; no trae datos de demanda |
+| Estaciones con coordenadas (usadas en la Actividad 2) | Sirve para ubicar estaciones y calcular rutas, pero no dice cuánta gente las usa |
+
+Se eligió el consolidado de salidas porque es la única fuente que trae, para cada estación, cuántas
+personas la usan y a qué hora. Esa información es la que necesitan los dos modelos.
+
 **Relación con el proyecto.** En las actividades anteriores el equipo construyó un sistema que
 calcula rutas en TransMilenio. Estos datos agregan lo que ese sistema no sabía: cuánta gente usa
 cada estación y a qué hora.

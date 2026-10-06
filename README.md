@@ -45,6 +45,7 @@ resultados/                     Figuras, reglas y tablas que generan los scripts
 docs/
   descripcion-datos.md          Fuente, columnas, limpieza y limitaciones de los datos
   pruebas-realizadas.md         Qué se probó y con qué resultado
+  mapa-conceptual-actividad-3   Mapa conceptual del aprendizaje supervisado (PNG y PDF)
 ```
 
 ## Resultados principales
