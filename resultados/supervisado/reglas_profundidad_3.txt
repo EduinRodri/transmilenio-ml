@@ -1,0 +1,22 @@
+|--- salidas_diarias_estacion <= 7327.00
+|   |--- tipo_dia_domingo_festivo <= 0.50
+|   |   |--- salidas_diarias_estacion <= 3645.50
+|   |   |   |--- class: baja
+|   |   |--- salidas_diarias_estacion >  3645.50
+|   |   |   |--- class: media
+|   |--- tipo_dia_domingo_festivo >  0.50
+|   |   |--- salidas_diarias_estacion <= 5660.50
+|   |   |   |--- class: baja
+|   |   |--- salidas_diarias_estacion >  5660.50
+|   |   |   |--- class: baja
+|--- salidas_diarias_estacion >  7327.00
+|   |--- hora <= 4.50
+|   |   |--- salidas_diarias_estacion <= 13210.00
+|   |   |   |--- class: baja
+|   |   |--- salidas_diarias_estacion >  13210.00
+|   |   |   |--- class: baja
+|   |--- hora >  4.50
+|   |   |--- hora <= 19.50
+|   |   |   |--- class: alta
+|   |   |--- hora >  19.50
+|   |   |   |--- class: baja
