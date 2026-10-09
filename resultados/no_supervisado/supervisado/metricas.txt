@@ -1,4 +1,0 @@
-Umbrales: baja <= 167 < media <= 507 < alta
-Profundidad elegida: 20
-Exactitud en prueba: 0.9181
-Exactitud de la línea base: 0.2903
